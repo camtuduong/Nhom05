@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Web Cá Nhân - Nguyễn Thiên Bảo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #4e54c8;
+        }
+        img {
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #4e54c8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li::before {
+            content: '✔';
+            color: #4e54c8;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trang Web Cá Nhân</h1>
+        <p>Chào mừng đến với hồ sơ cá nhân của tôi!</p>
+    </header>
+
+    <div class="container">
+        <div class="section" id="personal-info">
+            <h2>1. Thông tin cá nhân</h2>
+            <p><strong>Họ tên:</strong> Nguyễn Thiên Bảo</p>
+            <p><strong>Sở thích:</strong> Ngủ và đi chơi</p>
+            <p><strong>Định hướng nghề nghiệp:</strong> Lập trình game</p>
+            <img src="/assets/images/student5.jpg" alt="Ảnh đại diện" width="150">
+        </div>
+
+        <div class="section" id="education">
+            <h2>2. Quá trình học tập</h2>
+            <p>Học các môn: Lập trình web, lập trình di động, lập trình Windows Forms.</p>
+            <p>Dự án thực hiện: Game thủ thành, Game quản lý nhà hàng.</p>
+        </div>
+
+        <div class="section" id="skills">
+            <h2>3. Kỹ năng đạt được</h2>
+            <ul>
+                <li>Lập trình: Java, C#, Python</li>
+                <li>Thiết kế UI/UX: Figma</li>
+                <li>AI/ML: (Nếu có)</li>
+            </ul>
+        </div>
+
+        <div class="section" id="projects">
+            <h2>4. Dự án cá nhân</h2>
+            <p>Dự án lớn nhất: Game quản lý nhà hàng Multiplayer.</p>
+        </div>
+
+        <div class="section contact" id="contact">
+            <h2>5. Liên hệ</h2>
+            <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn của bạn</a></p>
+            <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">GitHub của bạn</a></p>
+            <p><a href="/assets/files/cv.pdf" download>Tải CV</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("Trang cá nhân đã được tải thành công!");
+        });
+    </script>
+</body>
+</html>
